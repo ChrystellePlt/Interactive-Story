@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: steelblue;
+  color: white;
+  background:#ccc url(../images/wood.jpg) repeat;
+}
+
+
+.main {
+
+  .buttons_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+    .buttons {
+      height: 30px;
+      width: 60px;
+    }
+  }
+}
+
+.bookContainer{
+  margin: auto;
+	width: 900px;
+	height:600px;
+	position: relative;
+  text-align: center;
+  &__pageContainer {
+    position: absolute;
+    top: 50px;
+    width: 350px;
+    left: 470px;
+    color: #000
+  }
+}
+
+a#next_page_button, a#prev_page_button {
+  position:absolute;
+  width:41px;
+  height:40px;
+  cursor:pointer;
+  margin-top:-20px;
+  top:50%;
+  background:transparent url(../images/buttons.png) no-repeat 0px -40px;
+}
+a#prev_page_button{
+  left:-30px;
+}
+a#next_page_button{
+  right:-30px;
+  background-position:-41px -40px;
+}

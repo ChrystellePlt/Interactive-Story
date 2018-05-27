@@ -1,0 +1,160 @@
+{
+  "data": [
+    {
+      "text" : "Je m'appelle Charlie. J'ai 27 ans, un appart, un mec, un boulot bien payé, une famille et des amis aimants, et hier, j'ai fait un BURN OUT.",
+      "choices": [
+        {
+          "button" : "Voir la vraie vie de Charlie",
+          "next" : "1"
+        },
+        {
+          "button" : "Suivant",
+          "next" : "2"
+        }
+      ]
+    },
+    {
+      "text" : "Je m'appelle Charlie. J'ai 27 ans mais l'impression d'en avoir 40, un appart de 28m2 que je partage un mec que je n'aime plus depuis 2 ans, un boulot bien payé parce que je travaille 70h par semaine, une famille et des amis aimants que je n'ai pas vu depuis 7 mois, et hier, j'ai fait un BURN OUT.",
+      "choices": [
+        {
+          "button" : "Précédent",
+          "next" : "0"
+        },
+        {
+          "button" : "Suivant",
+          "next" : "2"
+        }
+      ]
+    },
+    {
+      "text" : "Ce n'est pas faute d'avoir été prévenue pourtant... Avec le temps que je passe à bosser, ça allait forcément me retomber dessus. Mais comme d'habitude je n'ai écouté personne. Et maintenant je me retrouve à même pas 30 ans dans le cabinet de ce médecin pas aimable du tout à attendre mon arrêt maladie de 2 mois pour \"état dépressif secondaire dû à un « burn out » professionnel.\"",
+      "choices": [
+        {
+          "button" : "Précédent",
+          "next" : "0"
+        },
+        {
+          "button" : "Suivant",
+          "next" : "3"
+        }
+      ]
+    },
+    {
+      "text" : "Me voilà revenue de deux semaines chez mes parents. C'est dingue le bien que ça m'a fait de les retrouver ! Passer du temps avec eux, loin de l'agitation de la capitale, à respirer le grand air sans avoir à me soucier de terminer mes dossiers à l'heure, à manger les bons petits plats préparés par papa... Ce que je préfère avec mes parents, c'est qu'ils t'apprennent à ne jamais te laisser abattre, et si je suis rentrée à Paris, c'est bien pour mettre ce qu'ils m'ont enseigné en pratique...!",
+      "choices": [
+        {
+          "button" : "Précédent",
+          "next" : "2"
+        },
+        {
+          "button" : "Suivant",
+          "next" : "4"
+        }
+      ]
+    },
+    {
+      "text" : "Un jour, je suis tombée sur un reportage à la télé sur la Réunion, devant lequel je suis restée bloquée, émerveillée par la beauté de cette île. Et depuis 3 ans, je rêve secrêtement de faire comme ces gens qui partent seuls à l'aventure, avec pour seuls compagnons un sac à dos et leur courage. Aujourd'hui j'ai enfin l'occasion de le faire...",
+      "choices": [
+        {
+          "button" : "Précédent",
+          "next" : "3"
+        },
+        {
+          "button" : "Suivant",
+          "next" : "5"
+        }
+      ]
+    },
+    {
+      "text" : "Il reste quand même un léger problème, c'est que je ne suis pas tout à fait ce qu'on pourrait appeler une aventurière. J'ai un sens de l'orientation déplorable, la condition sportive d'un sexagénaire asthmatique, et une peur vicérale des araignées et de la solitude. Je me retrouve donc face à un dilème :",
+      "choices": [
+        {
+          "button" : "Choisir le confort et emmener Martin avec moi, bien que notre relation soit loin d'être au beau fixe",
+          "next" : "7"
+        },
+        {
+          "button" : "Choisir de dépasser mon appréhension et prendre le risque de vivre cette aventure...",
+          "next" : "6"
+        }
+      ]
+    },
+    {
+      "text" : "Je n'arrive pas à croire que j'ai sauté le pas ! Je suis enfin-là, seule, avec mon petit sac, sous le doux soleil de Saint-Denis. Je n'ai encore rien réservé alors alors je ferme les yeux et je commence à imaginer mon séjour sur l'île en appréciant la chaleur des rayons sur ma peau.",
+      "choices": [
+        {
+          "button" : "Je me vois allongée sur un transat, à siroter mon coktail au bord de la piscine et à goûter plaisir d'un hôtel 4 étoiles.",
+          "next" : "8"
+        },
+        {
+          "button" : "Je me vois assise dans une auberge à une grande table avec plein d'autres voyageurs que je ne connais pas, à manger et rire tous ensemble, à profiter juste de l'instant présent sans me soucier de demain",
+          "next" : "9"
+        }
+      ]
+    },
+    {
+      "text" : "J'ai flippé et j'ai préféré partir avec Martin, bien qu'il soit relou... Quelle valise je choisi?",
+      "choices": [
+        {
+          "button" : "Rose",
+          "next" : "5"
+        },
+        {
+          "button" : "Bleue",
+          "next" : "6"
+        }
+      ]
+    },
+    {
+      "text" : "Aaaah l'hôtel, le spa, la plage... on est pas bien ici ?",
+      "choices": [
+        {
+          "button" : "C'est tooooop !!",
+          "next" : "0"
+        },
+        {
+          "button" : "On s'ennuie un peu quand même...",
+          "next" : "0"
+        }
+      ]
+    },
+    {
+      "text" : "Voyager à la roots il n'y a que ça de vrai ! En plus j'ai rencontré plein de gens dans cette auberge ! Ils m'ont proposé de voyager un peu avec eux. J'y vais ?",
+      "choices": [
+        {
+          "button" : "Bien-sûr !!",
+          "next" : "0"
+        },
+        {
+          "button" : "La prochaine fois",
+          "next" : "0"
+        }
+      ]
+    },
+    {
+      "text" : "Valise rose, plus facile à repérer à l'aéroport !",
+      "choices": [
+        {
+          "button" : "osef",
+          "next" : "0"
+        },
+        {
+          "button" : "osef 2",
+          "next" : "0"
+        }
+      ]
+    },
+    {
+      "text" : "Valise bleue, c'est quand meme plus discret!",
+      "choices": [
+        {
+          "button" : "osef",
+          "next" : "0"
+        },
+        {
+          "button" : "osef 2",
+          "next" : "0"
+        }
+      ]
+    }
+  ]
+}
