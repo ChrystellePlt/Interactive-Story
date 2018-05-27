@@ -6,41 +6,46 @@ body {
   color: white;
   background: #ccc url(../images/wood.jpg) repeat; }
 
-.main .buttons_container {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px; }
-  .main .buttons_container .buttons {
-    height: 30px;
-    width: 60px; }
-
 .bookContainer {
   margin: auto;
   width: 900px;
-  height: 600px;
   position: relative;
   text-align: center; }
   .bookContainer__pageContainer {
     position: absolute;
     top: 50px;
-    width: 350px;
-    left: 470px;
-    color: #000; }
+    width: 345px;
+    left: 480px;
+    color: #000;
+    font-size: 18px;
+    line-height: 32px;
+    font-family: 'Satisfy', cursive; }
+    .bookContainer__pageContainer__date {
+      display: flex;
+      justify-content: flex-end; }
+    .bookContainer__pageContainer__textContent {
+      text-align: left; }
+    .bookContainer__pageContainer__buttonsContainer {
+      display: flex; }
+      .bookContainer__pageContainer__buttonsContainer .choices {
+        font-family: 'Satisfy', cursive; }
+  .bookContainer .next_button, .bookContainer .prev_button {
+    position: absolute;
+    width: 41px;
+    height: 40px;
+    cursor: pointer;
+    top: 270px;
+    background: transparent url(../images/buttons.png) no-repeat 0px -40px; }
+  .bookContainer .prev_button {
+    left: -30px; }
+  .bookContainer .next_button {
+    right: -30px;
+    background-position: -41px -40px; }
 
-a#next_page_button, a#prev_page_button {
-  position: absolute;
-  width: 41px;
-  height: 40px;
-  cursor: pointer;
-  margin-top: -20px;
-  top: 50%;
-  background: transparent url(../images/buttons.png) no-repeat 0px -40px; }
+.--hidden {
+  display: none; }
 
-a#prev_page_button {
-  left: -30px; }
-
-a#next_page_button {
-  right: -30px;
-  background-position: -41px -40px; }
+.--show {
+  display: block; }
 
 /*# sourceMappingURL=main.css.map */

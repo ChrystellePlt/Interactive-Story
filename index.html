@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
   <title>Page Title</title>
 </head>
 
@@ -13,16 +14,16 @@
   <div class="bookContainer">
     <img class="bookContainer__img" src="images/bg.png" alt="">
     <div class="bookContainer__pageContainer">
-      <div class="bookContainer__pageContainer__pageContent">Je m'appelle Charlie. J'ai 27 ans, un appart, un mec, un boulot bien payé, une famille et des amis aimants, et hier, j'ai fait un BURN OUT.</div>
+      <span class="bookContainer__pageContainer__date">03 mai 2018</span>
+
+      <p class="bookContainer__pageContainer__textContent">Je m'appelle Charlie. J'ai 27 ans, un appart, un mec, un boulot bien payé, une famille et des amis aimants, et hier, j'ai fait un BURN OUT.</p>
       <div class="bookContainer__pageContainer__buttonsContainer">
-        <button class="choices button01">Voir la vraie vie de Charlie</button>
-        <button class="choices button02">Suivant</button>
+        <button class="choices choice_01 --hidden">Voir la vraie vie de Charlie</button>
+        <button class="choices choice_02 --hidden">test</button>
       </div>
     </div>
-    <a id="next_page_button"></a>
-    <a id="prev_page_button"></a>
-
-
+    <a class="next_button"></a>
+    <a class="prev_button"></a>
   </div>
 
   <!-- end content -->
