@@ -1,158 +1,168 @@
 {
   "data": [
-    {
-      "text" : "Je m'appelle Charlie. J'ai 27 ans, un appart, un mec, un boulot bien payé, une famille et des amis aimants, et hier, j'ai fait un BURN OUT.",
-      "choices": [
-        {
-          "button" : "Voir la vraie vie de Charlie",
-          "next" : "1"
-        },
-        {
-          "button" : "Suivant",
-          "next" : "2"
-        }
-      ]
+    { "index" : 0,
+      "background" : "<img class=\"backgroundContainer__img\" src=\"img/desk.jpg\" alt=\"\">",
+      "date" : "03 mai 2018",
+      "text" : "Je n'arrive pas à croire que ça me soit arrivé... Je pensais que c'était le genre de truc qui touchait les autres, pas MOI ! D'accord je travaille beaucoup, je suis sous tension permanente, j'ai plus vraiment le temps de voir mes amis et avec Martin ça fait un an que notre histoire d'amour ne ressemble plus à grand chose mais quand même... De là à me retrouver à même pas 30 ans avec arrêt maladie de 2 mois pour \"état dépressif secondaire dû à un « burn out » professionnel\", c'est que j'ai vraiment raté quelque chose."
     },
-    {
-      "text" : "Je m'appelle Charlie. J'ai 27 ans mais l'impression d'en avoir 40, un appart de 28m2 que je partage un mec que je n'aime plus depuis 2 ans, un boulot bien payé parce que je travaille 70h par semaine, une famille et des amis aimants que je n'ai pas vu depuis 7 mois, et hier, j'ai fait un BURN OUT.",
-      "choices": [
-        {
-          "button" : "Précédent",
-          "next" : "0"
-        },
-        {
-          "button" : "Suivant",
-          "next" : "2"
-        }
-      ]
+    { "index" : 1,
+      "background" : "<img class=\"backgroundContainer__img\" src=\"img/desk.jpg\" alt=\"\">",
+      "date" : "07 mai 2018",
+      "text" : "J'ai appelé papa et maman pour les prévenir. Ils m'ont conseillé de changer d'air, d'aller m'aérer l'esprit pour prendre du recul sur la situation. Même discours chez les potes. Martin lui, est resté impassible... Ça fait des mois que la communication entre nous est rompue. Je crois qu'au fond maintenant on est plus colocs que couple, mais bon... <br /> Pas question que je me laisse abattre ! Et pour une fois, je vais écouter ce qu'on me dit de faire."
     },
-    {
-      "text" : "Ce n'est pas faute d'avoir été prévenue pourtant... Avec le temps que je passe à bosser, ça allait forcément me retomber dessus. Mais comme d'habitude je n'ai écouté personne. Et maintenant je me retrouve à même pas 30 ans dans le cabinet de ce médecin pas aimable du tout à attendre mon arrêt maladie de 2 mois pour \"état dépressif secondaire dû à un « burn out » professionnel.\"",
-      "choices": [
-        {
-          "button" : "Précédent",
-          "next" : "0"
-        },
-        {
-          "button" : "Suivant",
-          "next" : "3"
-        }
-      ]
+    { "index" : 2,
+      "background" : "<img class=\"backgroundContainer__img\" src=\"img/desk.jpg\" alt=\"\">",
+      "date" : "08 mai 2018",
+      "text" : "C'est décidé, je pars pour la Réunion !!! Depuis le temps que je dis que je veux y aller, aujourd'hui le travail n'est plus là pour m'en empêcher... <br /> Et puis, je peux l'écrire ici, je jalouse secrêtement tous ces gens qui partent en solo à l'aventure, avec pour seuls compagnons un sac à dos et leur courage. J'aimerais tellement être comme eux... Fini les transports parisiens dégueulasses, les horaires à respecter, les dossiers à rendre en urgence... ce serait le rêve ! Le problème, c'est que je ne suis pas tout à fait ce qu'on pourrait appeler une aventurière."
     },
-    {
-      "text" : "Me voilà revenue de deux semaines chez mes parents. C'est dingue le bien que ça m'a fait de les retrouver ! Passer du temps avec eux, loin de l'agitation de la capitale, à respirer le grand air sans avoir à me soucier de terminer mes dossiers à l'heure, à manger les bons petits plats préparés par papa... Ce que je préfère avec mes parents, c'est qu'ils t'apprennent à ne jamais te laisser abattre, et si je suis rentrée à Paris, c'est bien pour mettre ce qu'ils m'ont enseigné en pratique...!",
+    { "index" : 3,
+      "background" : "<img class=\"backgroundContainer__img\" src=\"img/desk.jpg\" alt=\"\">",
+      "date" : "",
+      "text" : "J'ai un sens de l'orientation déplorable, la condition sportive d'une sexagénaire asthmatique, et une peur vicérale des araignées et de la solitude... Du coup pour ce voyage je suis face à un dilème :",
       "choices": [
         {
-          "button" : "Précédent",
-          "next" : "2"
+          "choice" : "Soit choisir le confort et emmener Martin avec moi, bien que notre relation soit au plus mal...",
+          "next" : "5"
         },
         {
-          "button" : "Suivant",
+          "choice" : "Soit choisir de dépasser mon appréhension et prendre le risque de vivre une vraie aventure...",
           "next" : "4"
         }
       ]
     },
-    {
-      "text" : "Un jour, je suis tombée sur un reportage à la télé sur la Réunion, devant lequel je suis restée bloquée, émerveillée par la beauté de cette île. Et depuis 3 ans, je rêve secrêtement de faire comme ces gens qui partent seuls à l'aventure, avec pour seuls compagnons un sac à dos et leur courage. Aujourd'hui j'ai enfin l'occasion de le faire...",
+    { "index" : 4,
+      "background" : "<img class=\"backgroundContainer__img\" src=\"img/desk.jpg\" alt=\"\">",
+      "date" : "15 mai 2018",
+      "text" : "Je n'arrive pas à croire que j'ai sauté le pas ! Je l'ai fait ! Au final, ça n'a pas été si difficile de quitter Martin... Il vallait mieux s'arrêter là. Me voilà donc célibataire et prête à vivre ce voyage à fond! <br/> Ne reste plus qu'à décider de comment je vais vivre cette aventure. ",
       "choices": [
         {
-          "button" : "Précédent",
-          "next" : "3"
+          "choice" : "Plutôt hôtel All Inclusive, allongée sur un transat au bord de la piscine à siroter mon coktail",
+          "next" : "6"
         },
         {
-          "button" : "Suivant",
-          "next" : "5"
-        }
-      ]
-    },
-    {
-      "text" : "Il reste quand même un léger problème, c'est que je ne suis pas tout à fait ce qu'on pourrait appeler une aventurière. J'ai un sens de l'orientation déplorable, la condition sportive d'un sexagénaire asthmatique, et une peur vicérale des araignées et de la solitude. Je me retrouve donc face à un dilème :",
-      "choices": [
-        {
-          "button" : "Choisir le confort et emmener Martin avec moi, bien que notre relation soit loin d'être au beau fixe",
+          "choice" : "Plutôt à la roots, à échanger et partager des repas avec des locaux et d'autres voyageurs, à profiter sans me soucier de demain.",
           "next" : "7"
-        },
-        {
-          "button" : "Choisir de dépasser mon appréhension et prendre le risque de vivre cette aventure...",
-          "next" : "6"
         }
       ]
     },
-    {
-      "text" : "Je n'arrive pas à croire que j'ai sauté le pas ! Je suis enfin-là, seule, avec mon petit sac, sous le doux soleil de Saint-Denis. Je n'ai encore rien réservé alors alors je ferme les yeux et je commence à imaginer mon séjour sur l'île en appréciant la chaleur des rayons sur ma peau.",
+    { "index" : 5,
+      "background" : "<img class=\"backgroundContainer__img\" src=\"img/desk.jpg\" alt=\"\">",
+      "date" : "17 mai 2018",
+      "text" : "Nous voilà arrivés sur l'île depuis 2 jours mais je n'arrive pas à faire le vide. Martin est là seulement parce que mes peurs m'ont rattrapées et que je n'ai pas eu le courage de partir sans lui. Au fond de moi, je n'ai pas envie qu'il soit ici et je sens que je suis en train de passer à côté de quelque chose... Je sais que je dois prendre une décison :",
       "choices": [
         {
-          "button" : "Je me vois allongée sur un transat, à siroter mon coktail au bord de la piscine et à goûter plaisir d'un hôtel 4 étoiles.",
-          "next" : "8"
-        },
-        {
-          "button" : "Je me vois assise dans une auberge à une grande table avec plein d'autres voyageurs que je ne connais pas, à manger et rire tous ensemble, à profiter juste de l'instant présent sans me soucier de demain",
+          "choice" : "Soit je reste avec Martin et j'essaye de réparer ce qu'il nous reste de sentiments",
           "next" : "9"
+        },
+        {
+          "choice" : "Soit je prends mon courage à deux mains et je me risque à une aventure en solitaire",
+          "next" : "4"
         }
       ]
     },
-    {
-      "text" : "J'ai flippé et j'ai préféré partir avec Martin, bien qu'il soit relou... Quelle valise je choisi?",
+    { "index" : 6,
+      "background" : "<img class=\"backgroundContainer__img\" src=\"img/desk.jpg\" alt=\"\">",
+      "date" : "18 mai 2018",
+      "text" : "Aaaah l'hôtel, le spa, la plage... qu'est-ce que je suis bien ici ! Aujourd'hui j'ai fait bronzette toute la journée !! C'est si calme ici, ça fait tellement de bien. Je me demande même si je ne vais pas un peu m'ennuyer à la longue. De toute façon rien n'est fixé et j'ai deux choix qui s'offre à moi : ",
       "choices": [
         {
-          "button" : "Rose",
-          "next" : "5"
+          "choice" : "Passer mes 3 semaines à l'hôtel pour des vacances 100% farniente ! ",
+          "next" : "12"
         },
         {
-          "button" : "Bleue",
-          "next" : "6"
+          "choice" : "Ajouter un peu de piment à ce séjour et partir faire le tour de l'île sac à dos sur le dos, ambiance aventure !",
+          "next" : "7"
         }
       ]
     },
-    {
-      "text" : "Aaaah l'hôtel, le spa, la plage... on est pas bien ici ?",
+    { "index" : 7,
+      "background" : "<img class=\"backgroundContainer__img\" src=\"img/desk.jpg\" alt=\"\">",
+      "buttons" : true,
+      "date" : "21 mai 2018",
+      "text" : "Aaaah le voyage à la roots, rien de plus authentique ! Je me sens revivre ! Les habitants d'ici sont tellement chaleureux et accueillants, j'ai l'impression de me sentir plus chez moi ici qu'à Paris. J'ai rencontré plein de gens géniaux qui m'ont invitée chez eux ou à partager une barcnecue sur la plage avec eux. Au final je n'ai quasiment pas été seule depuis que je vadrouille sur l'île, et je regrette de ne jamais être partie en solo avant. J'ai aussi rencontré un trio trooop sympa. Ça fait 4 mois qu'ils ont débuté leur tour du monde après avoir chacun quitté leur job.",
       "choices": [
         {
-          "button" : "C'est tooooop !!",
+          "choice" :"",
           "next" : "0"
         },
         {
-          "button" : "On s'ennuie un peu quand même...",
-          "next" : "0"
-        }
-      ]
-    },
-    {
-      "text" : "Voyager à la roots il n'y a que ça de vrai ! En plus j'ai rencontré plein de gens dans cette auberge ! Ils m'ont proposé de voyager un peu avec eux. J'y vais ?",
-      "choices": [
-        {
-          "button" : "Bien-sûr !!",
-          "next" : "0"
-        },
-        {
-          "button" : "La prochaine fois",
+          "choice" : "",
           "next" : "0"
         }
       ]
     },
-    {
-      "text" : "Valise rose, plus facile à repérer à l'aéroport !",
+    { "index" : 8,
+      "background" : "<img class=\"backgroundContainer__img\" src=\"img/desk.jpg\" alt=\"\">",
+      "date" : "",
+      "text" : "Ils sont au courant pour le Burn Out et ils m'ont proposé de les suivre, de tout lâcher de mon ancienne vie. C'est vrai que c'est hyper tentant...  ",
       "choices": [
         {
-          "button" : "osef",
-          "next" : "0"
+          "choice" : "Partir comme ça, abandonner sur un coup de tête cette vie bien rangée dans laquelle je ne m'épanouie pas pour vivre une expérience unique pleines d'incertitudes.",
+          "next" : "10"
         },
         {
-          "button" : "osef 2",
-          "next" : "0"
+          "choice" : "Ou rentrer à Paris, me trouver un boulot plus tranquille, rester auprès de ceux que j'aime et assurer mon avenir...",
+          "next" : "11"
         }
       ]
     },
-    {
-      "text" : "Valise bleue, c'est quand meme plus discret!",
+    { "index" : 9,
+      "background" : "<img class=\"backgroundContainer__img\" src=\"img/desk.jpg\" alt=\"\">",
+      "date" : "03 juin 2018",
+      "text" : "Ma lâcheté me perdra... J'ai tellement eu peur de me retrouver toute seule que j'ai passé mes vacances avec Martin alors qu'on a plus rien à se dire. On rentre demain en France et je n'ai pas l'impression d'avoir fait le vide, ni d'être apaisée. Aujourd'hui je réalise combien c'est une erreur de ne pas être partie seule. Ça n'aurait peut-être pas été une expérience fructueuse, ni même de bonnes vacances, mais au moins j'aurais la satisfaction de ne pas avoir de regrets... ",
       "choices": [
         {
-          "button" : "osef",
-          "next" : "0"
+          "choice" : "",
+          "next" : ""
         },
         {
-          "button" : "osef 2",
-          "next" : "0"
+          "choice" : "",
+          "next" : ""
+        }
+      ]
+    },
+    { "index" : 10,
+      "background" : "<img class=\"backgroundContainer__img\" src=\"img/desk.jpg\" alt=\"\">",
+      "date" : "30 mai 2018",
+      "text" : "J'ai appellé papa et maman pour leur dire que ce voyage m'a transformée et que dès que je serai rentrée je mettrai mon appartement en location pour repartir aussitôt parcourir le globe. Tous ces voyageurs que j'ai rencontré m'ont tellement inspirée. J'ai ressenti un soulagmenent incroyable en comprenant qu'on avait le droit d'être heureux autrement qu'avec une panoplie \"maison / mari / enfants\". Aujourd'hui débute ma deuxième vie. Une Charlie toute nouvelle et apaisée, bien décidée à ne plus être une victime de la société, une Charlie qui décide de comment sera sa vie. ",
+      "choices": [
+        {
+          "choice" : "",
+          "next" : ""
+        },
+        {
+          "choice" : "",
+          "next" : ""
+        }
+      ]
+    },
+    { "index" : 11,
+      "background" : "<img class=\"backgroundContainer__img\" src=\"img/desk.jpg\" alt=\"\">",
+      "date" : "02 juin 2018",
+      "text" : "Aujourd'hui c'est la dernière journée ici. C'est dingue ce que j'ai pu changer en juste 3 semaines. Rencontrer tous ces gens, ça m'a vraiment appris à penser différemment. Je garde en tête la proposition de mes amis de les rejoindre dans leur tour du monde mais pour l'instant je préfère rentrer à Paris et remettre tranquillement de l'ordre dans ma vie. Je me sens encore un peu trop fragile pour sauter le pas. Si je dois le faire, j'aimerais être sûre de moi. <br /> En tous cas merci Réunion, ton soleil et ton accueil vont me manquer... :) ",
+      "choices": [
+        {
+          "choice" : "",
+          "next" : ""
+        },
+        {
+          "choice" : "",
+          "next" : ""
+        }
+      ]
+    },
+    { "index" : 12,
+      "background" : "<img class=\"backgroundContainer__img\" src=\"img/desk.jpg\" alt=\"\">",
+      "date" : "30 mai 2018",
+      "text" : "Ça y est, les 3 semaines touchent à leur fin. AAAaaaah j'ai pas envie de rentrer ! Je me suis tellement bien reposée ici ! Être en tête avec moi-même ça m'a quand même permis de faire le point sur ma vie. Quand je serai rentrée, je chercherai un nouveau boulot, moins stressant. Je vais sûrement perdre un peu sur mon salaire, mais j'ai compris ici que ce n'était pas ça l'important. Réunion ma petite île chérie, merci de m'avoir ouvert les yeux. Je te promets que mon carnet et moi tu nous reverras ! :) ",
+      "choices": [
+        {
+          "choice" : "",
+          "next" : ""
+        },
+        {
+          "choice" : "",
+          "next" : ""
         }
       ]
     }
