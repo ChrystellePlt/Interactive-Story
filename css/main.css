@@ -2,33 +2,48 @@
   box-sizing: border-box; }
 
 body {
-  background: steelblue;
+  margin: 0;
   color: white;
-  background: #ccc url(../images/wood.jpg) repeat; }
+  font-family: 'Dancing Script', cursive;
+  font-size: 19px;
+  line-height: 32px; }
+
+.backgroundContainer {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  overflow: hidden; }
+  .backgroundContainer__img {
+    width: 100%; }
 
 .bookContainer {
-  margin: auto;
   width: 900px;
   position: relative;
-  text-align: center; }
+  text-align: center;
+  margin: 10vh 10vw; }
   .bookContainer__pageContainer {
     position: absolute;
     top: 50px;
-    width: 345px;
+    width: 340px;
     left: 480px;
-    color: #000;
-    font-size: 18px;
-    line-height: 32px;
-    font-family: 'Satisfy', cursive; }
+    color: #000; }
     .bookContainer__pageContainer__date {
       display: flex;
       justify-content: flex-end; }
     .bookContainer__pageContainer__textContent {
       text-align: left; }
     .bookContainer__pageContainer__buttonsContainer {
-      display: flex; }
+      margin-left: -30px; }
       .bookContainer__pageContainer__buttonsContainer .choices {
-        font-family: 'Satisfy', cursive; }
+        cursor: pointer;
+        text-align: left;
+        font-weight: 700;
+        margin-bottom: 20px;
+        font-size: 18px; }
+        .bookContainer__pageContainer__buttonsContainer .choices:hover {
+          color: red; }
   .bookContainer .next_button, .bookContainer .prev_button {
     position: absolute;
     width: 41px;
