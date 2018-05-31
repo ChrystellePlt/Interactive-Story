@@ -75,3 +75,19 @@ fetch('./js/data.json')
   .catch(function(err) {
     console.log('Fetch Error :-S', err);
   });
+
+  const name = document.querySelector('#charlie_path');
+  const startBtn = document.querySelector('.bookContainer__coverPage__button');
+  const coverPage = document.querySelector('.bookContainer__coverPage');
+  const pagesContainer = document.querySelector('.bookContainer__pageContainer');
+
+
+  name.addEventListener('animationend', () => {
+    startBtn.classList.remove('--hidden');
+    startBtn.classList.add('--animations');
+  })
+
+  startBtn.addEventListener('click', () => {
+    coverPage.classList.add('--hidden');
+    pagesContainer.classList.remove('--hidden');
+  })
