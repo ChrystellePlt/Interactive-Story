@@ -10,23 +10,30 @@ body {
 
 .backgroundContainer {
   position: absolute;
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
   top: 0;
   right: 0;
   overflow: hidden; }
   .backgroundContainer__img {
-    height: 100%; }
-  .backgroundContainer .--bg01, .backgroundContainer .--bg02, .backgroundContainer .--bg03 {
-    display: none; }
-  .backgroundContainer .--active_bg {
-    display: block; }
+    min-height: 100vh;
+    min-width: 100%; }
 
 .bookContainer {
   width: 900px;
   position: relative;
   text-align: center;
   margin: 10vh 10vw; }
+  .bookContainer__leftPage {
+    position: absolute;
+    top: 35px;
+    left: 50px;
+    width: 380px;
+    height: 480px;
+    overflow: hidden; }
+    .bookContainer__leftPage__img {
+      max-width: 100%;
+      max-height: 100%; }
   .bookContainer__coverPage {
     position: absolute;
     top: 50px;
