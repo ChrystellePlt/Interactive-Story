@@ -18,69 +18,73 @@ fetch('./js/data.json')
         const nextBtn = document.querySelector('.next_button');
         const prevBtn = document.querySelector('.prev_button');
         const bgContainer = document.querySelector('.backgroundContainer');
-        const bg01 = document.querySelector('.bg01');
-        const bg02 = document.querySelector('.bg02');
-        const bg03 = document.querySelector('.bg03');
-
+        const leftPage = document.querySelector('.bookContainer__leftPage');
         let index = 0;
+        let curr;
+        let prev = document.querySelector('.--bg01');
 
-        nextBtn.addEventListener('click', (event) => {
-            index++
-            date.innerHTML = data.data[index].date;
-            content.innerHTML = data.data[index].text;
-            switch (data.data[index].background) {
-              case 1 : bgContainer.innerHTML = `<img class="backgroundContainer__img" src="img/background01.jpg" alt="">`;
-              break;
-              case 2 : bgContainer.innerHTML = `<img class="backgroundContainer__img" src="img/background02.jpg" alt="">`;
-              break;
-              case 3 :bgContainer.innerHTML = `<img class="backgroundContainer__img" src="img/background03.jpg" alt="">`;
-              break;
-            }
-            if (index === 3) {
-              nextBtn.classList.add('--hidden');
-              prevBtn.classList.add('--hidden');
-              choicesCtn.classList.remove('--hidden');
-            } else if (index === 8) {
-              nextBtn.classList.add('--hidden');
-              prevBtn.classList.add('--hidden');
-              choicesCtn.classList.remove('--hidden');
-              content.innerHTML = data.data[index].text;
-              date.innerHTML = data.data[index].date;
-              choice01.innerHTML = data.data[index].choices[0].choice;
-              choice02.innerHTML = data.data[index].choices[1].choice;
-            }
-        })
+        const updateBackground = () => {
+          curr = document.querySelector(data.data[index].background);
+          if (curr !== prev) {
+            curr.classList.add('--show');
+            prev.classList.remove('--show');
+          }
+          prev = curr;
+        }
 
-        prevBtn.addEventListener('click', (event) => {
-          index--
+        const changeRightPage = () => {
+          date.innerHTML = data.data[index].date;
           content.innerHTML = data.data[index].text;
-        } )
+          leftPage.innerHTML = `<img class="bookContainer__leftPage__img" src=${data.data[index].leftPage} alt="">`;
+        }
+
+        const updateContent = (trigger, iterator) => {
+
+          trigger.addEventListener('click', (event) => {
+              index = iterator(index);
+              changeRightPage();
+              updateBackground();
+              if (index === 3) {
+                nextBtn.classList.add('--hidden');
+                prevBtn.classList.add('--hidden');
+                choicesCtn.classList.remove('--hidden');
+              } else if (index === 8) {
+                nextBtn.classList.add('--hidden');
+                prevBtn.classList.add('--hidden');
+                choicesCtn.classList.remove('--hidden');
+                content.innerHTML = data.data[index].text;
+                date.innerHTML = data.data[index].date;
+                choice01.innerHTML = data.data[index].choices[0].choice;
+                choice02.innerHTML = data.data[index].choices[1].choice;
+              }
+          })
+        }
+
+        const test = () => {
+          choicesCtn.classList.add('--hidden');
+          nextBtn.classList.remove('--hidden');
+          prevBtn.classList.remove('--hidden');
+        }
+
+        coverPageAnimation();
+
+        updateContent(nextBtn, function(a) {return a + 1; });
+
+        updateContent(prevBtn, function(a) {return a - 1; });
 
         for (let i = 0; i < choices.length; i++) {
           choices[i].addEventListener("click", function() {
             index = data.data[index].choices[i].next;
-            date.innerHTML = data.data[index].date;
-            content.innerHTML = data.data[index].text;
-            switch (data.data[index].background) {
-              case 1 : bgContainer.innerHTML = `<img class="backgroundContainer__img" src="img/background01.jpg" alt="">`;
-              break;
-              case 2 : bgContainer.innerHTML = `<img class="backgroundContainer__img" src="img/background02.jpg" alt="">`;
-              break;
-              case 3 :bgContainer.innerHTML = `<img class="backgroundContainer__img" src="img/background03.jpg" alt="">`;
-              break;
-            }
+            changeRightPage();
+            updateBackground();
             choice01.innerHTML = data.data[index].choices[0].choice;
             choice02.innerHTML = data.data[index].choices[1].choice;
-            if (data.data[index].animationType === 2 ) {
-              nextBtn.classList.remove('--hidden');
-              prevBtn.classList.remove('--hidden');
-              choicesCtn.classList.add('--hidden');
-            } else if (data.data[index].animationType === 3) {
-              choicesCtn.classList.add('--hidden');
-            } else {
-              nextBtn.classList.add('--hidden');
-              prevBtn.classList.add('--hidden');
-              choicesCtn.classList.remove('--hidden');
+            switch (data.data[index].animationType) {
+              case 2 : test();
+            break;
+              case 3 : choicesCtn.classList.add('--hidden');
+            break;
+             default : (nextBtn.classList.add('--hidden') && prevBtn.classList.add('--hidden') && choicesCtn.classList.remove('--hidden'));
             }
           })
         }
@@ -91,7 +95,7 @@ fetch('./js/data.json')
     console.log('Fetch Error :-S', err);
   });
 
-  //cover page cascading animation
+const coverPageAnimation = () => {
 
   const name = document.querySelector('#charlie_path');
   const startBtn = document.querySelector('.bookContainer__coverPage__button');
@@ -99,6 +103,7 @@ fetch('./js/data.json')
   const pagesContainer = document.querySelector('.bookContainer__pageContainer');
   const nextBtn = document.querySelector('.next_button');
   const prevBtn = document.querySelector('.prev_button');
+  const leftPage = document.querySelector('.bookContainer__leftPage');
 
 
   name.addEventListener('animationend', () => {
@@ -120,3 +125,4 @@ fetch('./js/data.json')
       })
     })
   })
+}
