@@ -12,7 +12,7 @@
       "background" : ".--bg01",
       "leftPage" :"img/leftPage_lightBulbs.png",
       "date" : "07 mai 2018",
-      "text" : "J'ai appelé papa et maman pour les prévenir. Ils m'ont conseillé de changer d'air, d'aller m'aérer l'esprit pour prendre du recul sur la situation. Même discours chez les potes. Martin lui, est resté impassible... Ça fait des mois que la communication entre nous est rompue. Je crois qu'au fond maintenant on est plus colocs que couple, mais bon... <br /> Pas question que je me laisse abattre ! Et pour une fois, je vais écouter ce qu'on me dit de faire."
+      "text" : "Tout le monde me conseille de partir et de changer d'air, d'aller m'aérer l'esprit ailleurs pour prendre du recul sur la situation. Il n'y a que Martin qui ne dit rien, impassible comme toujours. Je me demande vraiment ce qu'on fout encore ensemble, si ce n'est pour diviser le loyer en deux... <br /> Mais là n'est pas là question ! Pour une fois, je vais écouter ce qu'on me dit de faire et me trouver une destination."
     },
     { "index" : 2,
       "animationType" : 1,
@@ -40,10 +40,10 @@
     },
     { "index" : 4,
       "animationType" : 1,
-      "background" : ".--bg02",
+      "background" : ".--bg04",
       "leftPage" :"img/leftPage_pinapple.png",
       "date" : "15 mai 2018",
-      "text" : "Je n'arrive pas à croire que j'ai sauté le pas ! Je l'ai fait ! Au final, ça n'a pas été si difficile de quitter Martin... Il vallait mieux s'arrêter là. Me voilà donc célibataire et prête à vivre ce voyage à fond! <br/> Ne reste plus qu'à décider de comment je vais vivre cette aventure. ",
+      "text" : "Je n'arrive pas à croire que j'ai sauté le pas ! Je l'ai fait ! Au final, ça n'a pas été si difficile de quitter Martin... Me voilà donc célibataire et prête à vivre ce voyage à fond! <br/> Ne reste plus qu'à décider comment : ",
       "choices": [
         {
           "choice" : "Plutôt hôtel All Inclusive, allongée sur un transat au bord de la piscine à siroter mon coktail",
@@ -57,7 +57,7 @@
     },
     { "index" : 5,
       "animationType" : 1,
-      "background" : ".--bg02",
+      "background" : ".--bg04",
       "leftPage" :"img/leftPage_anchor.png",
       "date" : "17 mai 2018",
       "text" : "Nous voilà arrivés sur l'île depuis 2 jours mais je n'arrive pas à faire le vide. Martin est là seulement parce que mes peurs m'ont rattrapées et que je n'ai pas eu le courage de partir sans lui. Au fond de moi, je n'ai pas envie qu'il soit ici et je sens que je suis en train de passer à côté de quelque chose... Je sais que je dois prendre une décison :",
@@ -95,7 +95,7 @@
       "leftPage" :"img/leftPage_butterflies.png",
       "buttons" : true,
       "date" : "21 mai 2018",
-      "text" : "Aaaah le voyage à la roots, rien de plus authentique ! Je me sens revivre ! Les habitants d'ici sont tellement chaleureux et accueillants, j'ai l'impression de me sentir plus chez moi ici qu'à Paris. J'ai rencontré plein de gens géniaux qui m'ont invitée chez eux ou à partager une barbecue sur la plage avec eux. Au final je n'ai quasiment pas été seule depuis que je vadrouille sur l'île, et je regrette de ne jamais être partie en solo avant. J'ai aussi rencontré un trio trooop sympa. Ça fait 4 mois qu'ils ont débuté leur tour du monde après avoir chacun quitté leur job.",
+      "text" : "Voyager à la roots c'est vraiment le meilleur moyen de découvrir un pays... Les Réunionnais sont tellement chaleureux et accueillants, je me sens plus chez moi ici qu'à Paris ! J'ai rencontré plein de gens géniaux qui m'ont invitée chez eux ou à partager des barbuc' sur la plage avec eux. Au final je ne suis presque jamais seule, je regrette tellement de ne jamais être partie en solo avant. Hier j'ai rencontré un trio trop sympa. Ça fait 4 mois qu'ils ont débuté leur tour du monde après avoir chacun quitté leur job.",
       "choices": [
         {
           "choice" :"",
@@ -126,14 +126,14 @@
     },
     { "index" : 9,
       "animationType" : 3,
-      "background" : ".--bg02",
+      "background" : ".--bg04",
       "leftPage" :"img/leftPage_ornement2.png",
       "date" : "03 juin 2018",
       "text" : "C'est dingue d'être aussi lâche !!! J'ai tellement eu peur de me retrouver toute seule que j'ai passé mes vacances avec Martin alors qu'on a plus rien à se dire. On rentre demain en France et je n'ai pas l'impression d'avoir fait le vide, ni d'être apaisée. Aujourd'hui je réalise combien c'est une erreur de ne pas être partie seule. Ça n'aurait peut-être pas été une expérience fructueuse, ni même de bonnes vacances, mais au moins j'aurais la satisfaction de ne pas avoir de regrets... ",
       "choices": [
         {
           "choice" : "Et si j'avais fait un autre choix ?",
-          "next" : ""
+          "next" : "3"
         },
         {
           "choice" : "",
@@ -150,7 +150,7 @@
       "choices": [
         {
           "choice" : "Où est-ce que j'en serais si j'avais fait un autre choix au départ?",
-          "next" : ""
+          "next" : "3"
         },
         {
           "choice" : "",
@@ -163,11 +163,11 @@
       "background" : ".--bg02",
       "leftPage" :"img/leftPage_flowers.png",
       "date" : "02 juin 2018",
-      "text" : "Aujourd'hui c'est la dernière journée ici. C'est dingue ce que j'ai pu changer en juste 3 semaines. Rencontrer tous ces gens, ça m'a vraiment appris à penser différemment. Je garde en tête la proposition de mes amis de les rejoindre dans leur tour du monde mais pour l'instant je préfère rentrer à Paris et remettre tranquillement de l'ordre dans ma vie. Je me sens encore un peu trop fragile pour sauter le pas. Si je dois le faire, j'aimerais être sûre de moi. <br /> En tous cas merci Réunion, ton soleil et ton accueil vont me manquer... :) ",
+      "text" : "Dernière journée ici... C'est dingue ce que j'ai pu changer en juste 3 semaines. Rencontrer tous ces gens, ça m'a vraiment appris à penser différemment. Je garde en tête la proposition de mes amis de les rejoindre dans leur tour du monde mais pour l'instant je préfère rentrer à Paris, je reste trop fragile pour sauter le pas. <br /> En tous cas merci Réunion, ton soleil et ton accueil vont me manquer ! Je me demande quand même :",
       "choices": [
         {
-          "choice" : "",
-          "next" : ""
+          "choice" : "Où est-ce que j'en serais si j'avais fait d'autres choix au départ?",
+          "next" : "3"
         },
         {
           "choice" : "",
@@ -180,11 +180,11 @@
       "background" : ".--bg02",
       "leftPage" :"img/leftPage_ornement3.png",
       "date" : "30 mai 2018",
-      "text" : "Ça y est, les 3 semaines touchent à leur fin. AAAaaaah j'ai pas envie de rentrer ! Je me suis tellement bien reposée ici ! Être en tête à tête avec moi-même ça m'a quand même permis de faire le point sur ma vie. Quand je serai rentrée, je chercherai un nouveau boulot, moins stressant. Je vais sûrement perdre un peu sur mon salaire, mais j'ai compris ici que ce n'était pas ça l'important. Réunion ma petite île chérie, merci de m'avoir ouvert les yeux. Je te promets que mon carnet et moi tu nous reverras ! :) ",
+      "text" : "Ça y est, les 3 semaines touchent à leur fin. AAAaaaah j'ai pas envie de rentrer ! Je me suis tellement bien reposée ici ! Être en tête à tête avec moi-même ça m'a quand même permis de faire le point sur ma vie. Quand je serai rentrée, je chercherai un nouveau boulot, moins stressant. C'est quand même fou comme nos choix peuvent influencer le cours de notre vie...",
       "choices": [
         {
-          "choice" : "",
-          "next" : ""
+          "choice" : "Que se serait-il passé pour moi si j'avais fait des choix différents ?",
+          "next" : "3"
         },
         {
           "choice" : "",

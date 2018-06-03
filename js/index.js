@@ -60,10 +60,19 @@ fetch('./js/data.json')
           })
         }
 
-        const test = () => {
+        const showButtons = () => {
           choicesCtn.classList.add('--hidden');
           nextBtn.classList.remove('--hidden');
           prevBtn.classList.remove('--hidden');
+        }
+
+        const hideButtons = () => {
+          choicesCtn.classList.remove('--hidden');
+          nextBtn.classList.add('--hidden');
+          prevBtn.classList.add('--hidden');
+          if (choice02.classList.contains('--hidden')) {
+            choice02.classList.remove('--hidden');
+          }
         }
 
         coverPageAnimation();
@@ -80,11 +89,11 @@ fetch('./js/data.json')
             choice01.innerHTML = data.data[index].choices[0].choice;
             choice02.innerHTML = data.data[index].choices[1].choice;
             switch (data.data[index].animationType) {
-              case 2 : test();
+              case 2 : showButtons();
             break;
-              case 3 : choicesCtn.classList.add('--hidden');
+              case 3 : choice02.classList.add('--hidden');
             break;
-             default : (nextBtn.classList.add('--hidden') && prevBtn.classList.add('--hidden') && choicesCtn.classList.remove('--hidden'));
+             default : hideButtons();
             }
           })
         }
