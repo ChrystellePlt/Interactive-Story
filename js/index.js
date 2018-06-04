@@ -41,7 +41,9 @@ fetch('./js/data.json')
         const updateContent = (trigger, iterator) => {
 
           trigger.addEventListener('click', (event) => {
+              console.log(index);
               index = iterator(index);
+              console.log(index);
               changeRightPage();
               updateBackground();
               if (index === 3) {
@@ -77,9 +79,9 @@ fetch('./js/data.json')
 
         coverPageAnimation();
 
-        updateContent(nextBtn, function(a) {return a + 1; });
+        updateContent(nextBtn, function(a) {return new Number(a) + 1; });
 
-        updateContent(prevBtn, function(a) {return a - 1; });
+        updateContent(prevBtn, function(a) {return new Number(a) - 1; });
 
         for (let i = 0; i < choices.length; i++) {
           choices[i].addEventListener("click", function() {
