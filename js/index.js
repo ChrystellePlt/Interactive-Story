@@ -6,6 +6,9 @@ const updateContent = (index, data, iterator) => {
   const choice02 = document.querySelector('.choice_02');
   const nextBtn = document.querySelector('.next_button');
   const prevBtn = document.querySelector('.prev_button');
+  const content = document.querySelector('.bookContainer__pageContainer__textContent');
+  const date = document.querySelector('.bookContainer__pageContainer__date');
+
 
   index = iterator(index);
   changeRightPage(data, index);
