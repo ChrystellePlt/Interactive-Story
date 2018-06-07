@@ -72,7 +72,7 @@ const coverPageAnimation = () => {
         nextBtn.classList.add('--fadeIn');
         prevBtn.classList.remove('--hidden');
         prevBtn.classList.add('--fadeIn');
-        playAudio();
+        audio.play();
       })
     })
   })
@@ -93,7 +93,7 @@ const updateContent = (index, data, iterator) => {
   index = iterator(index);
   updateDateContentAndDoodle(data, index);
   updateBackground(index, data.data[index].background);
-  playAudio();
+  playAudio(data, index);
 
   if (index === 3) {
     nextBtn.classList.add('--hidden');
@@ -118,7 +118,7 @@ const updateContentBis = (index, data) => {
   const choice01 = document.querySelector('.choice_01');
   const choice02 = document.querySelector('.choice_02');
 
-  playAudio();
+  playAudio(data, index);
   updateDateContentAndDoodle(data, index);
   updateBackground(index, data.data[index].background);
   choice01.innerHTML = data.data[index].choices[0].choice;
@@ -142,7 +142,6 @@ const updateDateContentAndDoodle = (data, index) => {
   const date = document.querySelector('.bookContainer__pageContainer__date');
   const content = document.querySelector('.bookContainer__pageContainer__textContent');
   const leftPage = document.querySelector('.bookContainer__leftPage');
-  const audio = document.querySelector('.audio_file');
 
   date.innerHTML = data.data[index].date;
   content.innerHTML = data.data[index].text;
@@ -150,10 +149,12 @@ const updateDateContentAndDoodle = (data, index) => {
 }
 
 // play audio file
-const playAudio = () => {
+const playAudio = (data, index) => {
 
   const audio = document.querySelector('.audio_file');
-  audio.play()
+  audio.innerHTML = `<source src=${data.data[index].audioSrc} type="audio/mpeg">`;
+  audio.load();
+  audio.play();
 
 }
 
