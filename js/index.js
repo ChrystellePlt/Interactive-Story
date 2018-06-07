@@ -1,3 +1,4 @@
+// change content when one arrow is clicked
 const updateContent = (index, data, iterator) => {
 
   const choicesCtn = document.querySelector('.bookContainer__pageContainer__buttonsContainer');
@@ -9,10 +10,10 @@ const updateContent = (index, data, iterator) => {
   const content = document.querySelector('.bookContainer__pageContainer__textContent');
   const date = document.querySelector('.bookContainer__pageContainer__date');
 
-
   index = iterator(index);
-  changeRightPage(data, index);
+  updateDateContentAndDoodle(data, index);
   updateBackground(index, data.data[index].background);
+  playAudio();
 
   if (index === 3) {
     nextBtn.classList.add('--hidden');
@@ -30,13 +31,15 @@ const updateContent = (index, data, iterator) => {
   return index;
 }
 
+// change content when a choice is made
 const updateContentBis = (index, data) => {
 
   const choices = document.querySelectorAll('.choices');
   const choice01 = document.querySelector('.choice_01');
   const choice02 = document.querySelector('.choice_02');
 
-  changeRightPage(data, index);
+  playAudio();
+  updateDateContentAndDoodle(data, index);
   updateBackground(index, data.data[index].background);
   choice01.innerHTML = data.data[index].choices[0].choice;
   choice02.innerHTML = data.data[index].choices[1].choice;
@@ -53,17 +56,29 @@ const updateContentBis = (index, data) => {
   return index;
 }
 
-const changeRightPage = (data, index) => {
+// update specific contents : date, text and doodle on left page
+const updateDateContentAndDoodle = (data, index) => {
 
   const date = document.querySelector('.bookContainer__pageContainer__date');
   const content = document.querySelector('.bookContainer__pageContainer__textContent');
   const leftPage = document.querySelector('.bookContainer__leftPage');
+  const audio = document.querySelector('.audio_file');
 
   date.innerHTML = data.data[index].date;
   content.innerHTML = data.data[index].text;
   leftPage.innerHTML = `<img class="bookContainer__leftPage__img" src=${data.data[index].leftPage} alt="">`;
 }
 
+// play audio file
+const playAudio = () => {
+
+  const audio = document.querySelector('.audio_file');
+  audio.play()
+
+}
+
+
+// update background image
 const updateBackground = (index, background) => {
 
   let curr;
@@ -79,6 +94,7 @@ const updateBackground = (index, background) => {
   prev = curr;
 }
 
+// show arrow buttons and hide choices
 const showButtons = () => {
 
   const choicesCtn = document.querySelector('.bookContainer__pageContainer__buttonsContainer');
@@ -90,6 +106,7 @@ const showButtons = () => {
   prevBtn.classList.remove('--hidden');
 }
 
+// hide arrow buttons and show choices
 const hideButtons = () => {
 
   const choicesCtn = document.querySelector('.bookContainer__pageContainer__buttonsContainer');
@@ -151,6 +168,8 @@ fetch('./js/data.json')
     console.log('Fetch Error :-S', err);
   });
 
+
+// First page cascading animation
 const coverPageAnimation = () => {
 
   const name = document.querySelector('#charlie_path');
@@ -160,7 +179,7 @@ const coverPageAnimation = () => {
   const nextBtn = document.querySelector('.next_button');
   const prevBtn = document.querySelector('.prev_button');
   const leftPage = document.querySelector('.bookContainer__leftPage');
-
+  const audio = document.querySelector('.audio_file');
 
   name.addEventListener('animationend', () => {
     startBtn.classList.remove('--hidden');
@@ -178,6 +197,7 @@ const coverPageAnimation = () => {
         nextBtn.classList.add('--fadeIn');
         prevBtn.classList.remove('--hidden');
         prevBtn.classList.add('--fadeIn');
+        playAudio();
       })
     })
   })
