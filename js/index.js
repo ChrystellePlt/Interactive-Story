@@ -1,3 +1,83 @@
+fetch('./js/data.json')
+  .then(
+    function(response) {
+      if (response.status !== 200) {
+        console.log('Looks like there was a problem. Status Code: ' +
+          response.status);
+        return;
+      }
+
+      // Examine the text in the response
+      response.json().then(function(data) {
+
+        const choices = document.querySelectorAll('.choices');
+        let index = 0;
+
+        const nextBtn = document.querySelector('.next_button');
+        const prevBtn = document.querySelector('.prev_button');
+
+        coverPageAnimation();
+
+        nextBtn.addEventListener('click', (event) => {
+          index = updateContent(index, data, function(a) {
+            return new Number(a) + 1;
+          });
+        })
+
+        prevBtn.addEventListener('click', (event) => {
+          index = updateContent(index, data, function(a) {
+            return new Number(a) - 1;
+          });
+        })
+
+        for (let i = 0; i < choices.length; i++) {
+          choices[i].addEventListener("click", function() {
+            index = data.data[index].choices[i].next;
+            updateContentBis(index, data)
+          })
+        }
+      });
+    }
+  )
+  .catch(function(err) {
+    console.log('Fetch Error :-S', err);
+  });
+
+
+// First page cascading animation
+const coverPageAnimation = () => {
+
+  const name = document.querySelector('#charlie_path');
+  const startBtn = document.querySelector('.bookContainer__coverPage__button');
+  const coverPage = document.querySelector('.bookContainer__coverPage');
+  const pagesContainer = document.querySelector('.bookContainer__pageContainer');
+  const nextBtn = document.querySelector('.next_button');
+  const prevBtn = document.querySelector('.prev_button');
+  const leftPage = document.querySelector('.bookContainer__leftPage');
+  const audio = document.querySelector('.audio_file');
+
+  name.addEventListener('animationend', () => {
+    startBtn.classList.remove('--hidden');
+    startBtn.classList.add('--nameAnimations');
+  })
+
+  startBtn.addEventListener('click', () => {
+    coverPage.classList.add('--fadeOut');
+    coverPage.addEventListener('animationend', () => {
+      coverPage.classList.add('--hidden');
+      pagesContainer.classList.remove('--hidden');
+      pagesContainer.classList.add('--fadeIn');
+      pagesContainer.addEventListener('animationend', () => {
+        nextBtn.classList.remove('--hidden');
+        nextBtn.classList.add('--fadeIn');
+        prevBtn.classList.remove('--hidden');
+        prevBtn.classList.add('--fadeIn');
+        playAudio();
+      })
+    })
+  })
+}
+
 // change content when one arrow is clicked
 const updateContent = (index, data, iterator) => {
 
@@ -120,85 +200,4 @@ const hideButtons = () => {
   if (choice02.classList.contains('--hidden')) {
     choice02.classList.remove('--hidden');
   }
-}
-
-
-fetch('./js/data.json')
-  .then(
-    function(response) {
-      if (response.status !== 200) {
-        console.log('Looks like there was a problem. Status Code: ' +
-          response.status);
-        return;
-      }
-
-      // Examine the text in the response
-      response.json().then(function(data) {
-
-        const choices = document.querySelectorAll('.choices');
-        let index = 0;
-
-        const nextBtn = document.querySelector('.next_button');
-        const prevBtn = document.querySelector('.prev_button');
-
-        coverPageAnimation();
-
-        nextBtn.addEventListener('click', (event) => {
-          index = updateContent(index, data, function(a) {
-            return new Number(a) + 1;
-          });
-        })
-
-        prevBtn.addEventListener('click', (event) => {
-          index = updateContent(index, data, function(a) {
-            return new Number(a) - 1;
-          });
-        })
-
-        for (let i = 0; i < choices.length; i++) {
-          choices[i].addEventListener("click", function() {
-            index = data.data[index].choices[i].next;
-            updateContentBis(index, data)
-          })
-        }
-      });
-    }
-  )
-  .catch(function(err) {
-    console.log('Fetch Error :-S', err);
-  });
-
-
-// First page cascading animation
-const coverPageAnimation = () => {
-
-  const name = document.querySelector('#charlie_path');
-  const startBtn = document.querySelector('.bookContainer__coverPage__button');
-  const coverPage = document.querySelector('.bookContainer__coverPage');
-  const pagesContainer = document.querySelector('.bookContainer__pageContainer');
-  const nextBtn = document.querySelector('.next_button');
-  const prevBtn = document.querySelector('.prev_button');
-  const leftPage = document.querySelector('.bookContainer__leftPage');
-  const audio = document.querySelector('.audio_file');
-
-  name.addEventListener('animationend', () => {
-    startBtn.classList.remove('--hidden');
-    startBtn.classList.add('--nameAnimations');
-  })
-
-  startBtn.addEventListener('click', () => {
-    coverPage.classList.add('--fadeOut');
-    coverPage.addEventListener('animationend', () => {
-      coverPage.classList.add('--hidden');
-      pagesContainer.classList.remove('--hidden');
-      pagesContainer.classList.add('--fadeIn');
-      pagesContainer.addEventListener('animationend', () => {
-        nextBtn.classList.remove('--hidden');
-        nextBtn.classList.add('--fadeIn');
-        prevBtn.classList.remove('--hidden');
-        prevBtn.classList.add('--fadeIn');
-        playAudio();
-      })
-    })
-  })
 }
